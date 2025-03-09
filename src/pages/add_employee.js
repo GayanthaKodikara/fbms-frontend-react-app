@@ -1,11 +1,20 @@
 
+
 function AddEmployee() {
 
     return (
-        <div>
-            <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                <div>
-                    <h4>Add Employee</h4>
+        <div className="container">
+            <div className="row">
+
+                <div className="list-group list-group-flush col-md-2 col-lg-2 vstack gap-4">
+                    <a className="list-group-item list-group-item-action" href="/employee_list" >Employee List</a>
+                    <a className="list-group-item list-group-item-action active" href="/add_employee" >Add Employee</a>
+                    <a className="list-group-item list-group-item-action"  href="/update_employee" >Update Employee</a>
+                    <a className="list-group-item list-group-item-action"  href="/remove_permission" >Remove Permission</a>
+                </div>
+
+                <div className='col-md-9 ms-sm-auto col-lg-10 px-md-4'>
+                    <h2>Add Employee</h2>
                     <form>
                         <div className="row">
                             <div className="col-md-6 mb-3">
@@ -158,7 +167,7 @@ function AddEmployee() {
                                     value="fabricator"
                                 />
                                 <label className="form-check-label" htmlFor="Checkbox2">
-                                   A 
+                                    A
                                 </label>
                             </div>
                             <div className="form-check form-check-inline">
@@ -177,7 +186,7 @@ function AddEmployee() {
                         <button type="submit" className="btn btn-primary mt-3">Add</button>
                     </form>
                 </div>
-            </main>
+            </div>
         </div>
     );
 }
